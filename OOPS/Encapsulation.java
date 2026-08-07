@@ -17,11 +17,14 @@ public class Encapsulation {
     }
 
     public void setAge(int a) {
-        this.age = a;
+        // Extra layer of authentication.
+        if (age < 100)
+            this.age = a;
+        return;
     }
 
     // public String getString() {
-    //     return this.gf;
+    // return this.gf;
     // }
 
     // Parameterised ctor
