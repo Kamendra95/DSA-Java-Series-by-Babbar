@@ -4,7 +4,7 @@ public class String_Basics {
 
 
 
-    // Question no. 1 
+    // Question no. 1 >>>>>>>>>>>>>>> Print each character of the string
     static void printString(String str){
         int n = str.length();
         for(int i=0; i<n; i++){
@@ -13,14 +13,14 @@ public class String_Basics {
         }
     }
 
-    // Question No. 2
+    // Question No. 2 >>>>>>>>>>>>>>>> Count length of string without length()
     static int getLengthOfString(String str){
         char[] arr = str.toCharArray();
         int len = arr.length;
         return len;
     }
 
-    // Question No. 3
+    // Question No. 3 >>>>>>>>>>>>>>> Count vowels in a String
     static int getVowelsCount(String str){
         int count = 0;
         for(int i=0; i<str.length(); i++){
@@ -32,7 +32,7 @@ public class String_Basics {
         return count;
     }
 
-    // Question No. 4
+    // Question No. 4 >>>>>>>>>>>>>>>>>>>>> Reverse a String
     static String reverseString(String str) {
         String reverse = "";
         int n = str.length();
@@ -43,7 +43,7 @@ public class String_Basics {
         return reverse;
     } 
     
-    // Question No. 5
+    // Question No. 5 >>>>>>>>>>>>>>>>>>> Check String is a palindrome or not
     static boolean isPalindrome(String str) {
         String original = str;
         String reverse = reverseString(original);
